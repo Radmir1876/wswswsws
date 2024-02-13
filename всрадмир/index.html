@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPA сайт Тимеркаева Радмира</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#register">Регистрация</a></li>
+            <li><a href="#login">Вход</a></li>
+            <li><a href="#user-profile" id="view-profile" style="display: none;">Профиль</a></li>
+            <li id="user-profile" style="display: none;">
+                <img id="user-icon" src="user-icon.png" alt="User Icon">
+                <span id="user-name"></span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="home">
+        <h1>Добро пожаловать в SPA сайт</h1>
+        <p>Главная страница.</p>
+    </section>
+    <section id="register" style="display: none;">
+        <h1>Регистрация</h1>
+        <form id="register-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Регистрация</button>
+        </form>
+    </section>
+    <section id="login" style="display: none;">
+        <h1>Вход</h1>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Вход</button>
+        </form>
+    </section>
+    <section id="user-profile" style="display: none;">
+        <h1>Профиль пользователя</h1>
+    </section>
+    <section id="user-profile" style="display: none;">
+        <h1>Профиль пользователя</h1>
+        <div id="profile-details">
+            <p><strong>Имя пользователя:</strong> <span id="profile-username"></span></p>
+            <p><strong>Email:</strong> <span id="profile-email"></span></p>
+            <p><strong>Дата регистрации:</strong> <span id="profile-registration-date"></span></p>
+        </div>
+        <div id="user-posts"></div>
+    </section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
